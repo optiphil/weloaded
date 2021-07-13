@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.menu-bar{
+    width: 20%;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin:15px ;
+    padding: 5px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu-bar ul li:hover {
+    background: #141412;
+    border-radius: 3px;
+   
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    border-radius: 50px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+   
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:hover{
+    background: black;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 15px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+   background-color: #fff;
+   color: black;
+  
+}
+.search-bar{
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    background: yellow;
+}
+.music{
+    background: black;
+    display: flex;
+}
+.music h1{
+    color: yellow;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.music img{
+   border-radius: 1000px;
+}
+.imag{
+    width: 70px;
+}
+.header{
+    display: flex;
+}
+.grid{
+    display: flex;
+}
+.jegs{
+    border-radius: 500px;
+    width: 100px;
+    height: 100px;
+}
+.musics,.musics2,.musics3,.musics4,.musics5,.musics6,.musics7,.musics8{
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.about-us h1{
+    color: black;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+}
+.about-us {
+    text-align: center;
+    background-image: url(./images/music5.jpg);
+}
+.about-us h2{
+    text-align: center;
+}
+.muzik h1{
+    margin-top: 5%;
+    font-size: 50px;
+}
+.search{
+    border-radius: 50px;
+}
+::placeholder{
+    color: #000;
+    font-size: 12px;
+
+}
+.input-box{
+    width: 70%;
+    background: transparent;
+    border: 1px solid #000;
+    margin: 6px 0;
+    margin-left: 50px  ;
+    height: 32px;
+    border-radius: 20px;
+    padding-top: 10px;
+    outline: none;
+    text-align: center;
+    color: #000;
+    font-weight: lighter;
+    position: relative;
+}
+footer{
+    height: 550px;
+    max-width: 100%;
+    background-color:#a09822;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2% 0 2%;
+
+  }
+.contentSec{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.contentSec div{
+    height: 75%;
+   width: 100%;
+    padding: 1% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 700;
+    justify-content: space-around;
+    align-items:center;
+    margin-right: 10%;
+}
+.subSec{
+    height: 15%;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.telephone{
+    margin-right: 50%;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.social-links{
+    display: flex;
+}
+.social-links a{
+    width:80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.5);
+    margin: 0 30px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 80px;
+   position: relative;
+   overflow: hidden;
+   transition: transform 0.5s;
+}
+.social-links svg{
+    z-index: 10;
+    position: relative;
+    transition: color 0.5s;
+}
+.social-links  ::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -99px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c92e3, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+.social-links :hover::after{
+    top: 0;
+}
+.social-links :hover svg{
+    color: #fff;
+}
+.social-links a:hover{
+    transform: translateY(-10px);
+}
+
